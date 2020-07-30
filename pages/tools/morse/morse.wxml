@@ -1,0 +1,16 @@
+<!--pages/tools/morse/morse.wxml-->
+<view class="container">
+
+  <view class="sub-container">
+      <textarea class="result-input" maxlength="14000" placeholder="输入需要编码的内容" bindinput="inputTap" value="{{inputContent}}" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="encodeTap">摩尔斯编码</button>
+    <button class="button nonfirst" type="primary" bindtap="decodeTap">摩尔斯解码</button>
+  </view>
+
+  <view class="sub-container">
+      <textarea class="result-input" maxlength="14000" placeholder="这里展示结果" value="{{resultContent}}" />
+  </view>
+</view>

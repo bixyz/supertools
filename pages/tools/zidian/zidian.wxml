@@ -1,0 +1,16 @@
+<!--pages/tools/express/express.wxml-->
+<view class="container">
+
+  <view class="item">
+    <input class="item-input" placeholder="输入汉字" bindinput="getContent" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="query">查询</button>
+  </view>
+
+  <scroll-view class="result-container" scroll-y="true">
+    <text class="result-input" selectable='true'>{{resultContent}}</text>
+  </scroll-view>
+
+</view>

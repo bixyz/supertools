@@ -1,0 +1,37 @@
+<!--pages/tools/draw/draw.wxml-->
+<view class="canvas_container">
+  <!--画布区域-->
+  <view class="canvas_area">
+    <!--注意：同一页面中的 canvas-id 不可重复，如果使用一个已经出现过的 canvas-id，该 canvas 标签对应的画布将被隐藏并不再正常工作   style="width:{{canvasWidth}}px; height:{{canvasHeight}}px" -->
+    <canvas canvas-id="myCanvas" class="myCanvas" disable-scroll="false" bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    </canvas>
+  </view>
+
+  <!--画布工具区域  一级菜单-->
+  <view class="canvas_tools" hidden="{{firstMenuFlag}}">
+    <view class="box {{penMenuImg}}" bindtap="menuSelect" data-menu="pen"></view>
+    <view class="box {{colorMenuImg}}" bindtap="menuSelect" data-menu="color"></view>
+    <view class="box clear {{clearMenuImg}}" bindtap="clearCanvas"></view>
+    <view class="box save" bindtap="saveCanvas"></view>
+  </view>
+
+  <!--画布工具区域  二级菜单  粗细-->
+  <view class="canvas_tools" hidden="{{penMenuFlag}}">
+    <view class="box back" bindtap="menuBack" data-menu="pen"></view>
+    <view class="box size1" bindtap="penSelect" data-param="1"></view>
+    <view class="box size2" bindtap="penSelect" data-param="2"></view>
+    <view class="box size3" bindtap="penSelect" data-param="4"></view>
+    <view class="box size4" bindtap="penSelect" data-param="8"></view>
+    <view class="box size5" bindtap="penSelect" data-param="16"></view>
+  </view>
+
+  <!--画布工具区域  二级菜单  颜色-->
+  <view class="canvas_tools" hidden="{{colorMenuFlag}}">
+    <view class="box back" bindtap="menuBack" data-menu="color"></view>
+    <view class="box color1" bindtap="colorSelect" data-param="#FF0000"></view>
+    <view class="box color2" bindtap="colorSelect" data-param="#00FF00"></view>
+    <view class="box color3" bindtap="colorSelect" data-param="#FFFF00"></view>
+    <view class="box color4" bindtap="colorSelect" data-param="#fc5c00"></view>
+    <view class="box color5" bindtap="colorSelect" data-param="#5900ff"></view>
+  </view>
+</view>

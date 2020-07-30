@@ -1,0 +1,14 @@
+<!--pages/tools/express/express.wxml-->
+<view class="container">
+
+  <view class="item">
+    <input class="item-input" placeholder="输入汉字" bindinput="getContent" />
+  </view>
+
+<image style="width: 128rpx; height: 128rpx;  margin-top: 50rpx;" src="images/arrow.png"></image>
+
+  <scroll-view class="result-container" scroll-y="true">
+    <text class="result-input" selectable='true'>{{resultContent}}</text>
+  </scroll-view>
+
+</view>

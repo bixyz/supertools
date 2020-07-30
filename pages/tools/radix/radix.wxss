@@ -1,0 +1,30 @@
+/* pages/tools/radix/radix.wxss */
+
+.item {
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.item-label {
+  width: 30%;
+  font-size: 40rpx;
+  font-family: "微软雅黑";
+}
+
+.item-input {
+  width: 70%;
+  height: 70rpx;
+  border: 1rpx solid #C0E6B8;
+  border-radius: 3rpx;
+  font-size: 40rpx;
+  font-family: "微软雅黑";
+}
+
+
+.button {
+  margin-top: 50rpx;
+}

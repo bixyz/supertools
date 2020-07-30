@@ -1,0 +1,15 @@
+<!--pages/tools/express/express.wxml-->
+<view class="container">
+
+  <view class="item">
+    <input class="item-input" placeholder="搜索关键字" bindinput="getContent" />
+  </view>
+
+  <!-- <view class="result-container">
+      <textarea class="result-input" maxlength="140000" value="{{resultContent}}" />
+  </view> -->
+
+   <scroll-view class="result-container" scroll-y="true">
+    <text class="result-input" selectable='true'>{{resultContent}}</text>
+  </scroll-view>
+</view>

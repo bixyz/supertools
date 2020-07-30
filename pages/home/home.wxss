@@ -1,0 +1,241 @@
+/* pages/home/home.wxss */
+.home-container {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.segments-container {
+  width: 100%;
+  height: 10%;
+}
+.grid-container
+ {
+  width: 100%;
+  height: 90%;
+  padding-bottom: 10rpx;  
+}
+
+.segments {
+  width: 100%;
+  height: 10%;
+  white-space: nowrap;
+  font-size: 40rpx;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.section {
+  width: 18%;
+  height: 100%;
+  text-align: center;
+  color: #000;
+  display: inline-block;
+  line-height: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+.section.active {
+  color: #d43d3d;
+}
+
+.articles {
+  margin-top: 35rpx;
+  width: 100%;
+  height: 100%;
+}
+
+.article {
+  padding: 8rpx 8rpx;
+  border-bottom: 1rpx dashed #eee;
+}
+
+.article::after {
+  content: "";
+  clear: both;
+  position: absoult;
+  height: 0;
+}
+
+.article:last-child {
+  border-bottom: none;
+}
+
+.left {
+  float: left;
+  width: 67%;
+  height: 80rpx;
+  position: relative;
+}
+
+.title {
+  font-size: 18rpx;
+}
+
+.subTitle {
+  font-size: 15rpx;
+  color: #aaa;
+}
+
+.date {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.date text {
+  color: #aaa;
+  padding-right: 5rpx;
+  font-size: 12rpx;
+}
+
+.cnt {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.cnt text {
+  color: #aaa;
+  padding-right: 5rpx;
+  font-size: 12rpx;
+}
+
+.right {
+  float: right;
+  width: 30%;
+}
+
+.right image {
+  width: 100%;
+  height: 80rpx;
+  display: block;
+}
+
+/* 分割线view */
+.split {
+  width: 100%;
+  height: 10%;
+  background: #ccc;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.segments2 {
+  width: 100%;
+height: 10%;
+background: #ccc;
+}
+
+/* 以下是九宫格 */
+.grid-scroll-container {
+  height: 100%;
+  display: flex;
+}
+.grid {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.tui-table-view {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0rpx 40rpx;
+}
+.tui-col-3 {
+  flex: 0 0 auto;
+  width: 32.33333333%;
+  text-align: center;
+  background: #d6ebcf;
+  color: #797979;
+  padding: 40rpx 0;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+
+.click-effect {
+  opacity: 0.9;
+  background: #c3d7bd;
+}
+
+/* 搜索框 */
+.weui-search-bar {
+  position: relative;
+  padding: 10rpx 20rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-sizing: border-box;
+  /* background-color: #fff;
+  border-bottom: 1rpx solid #D7D6DC;*/
+}
+.weui-icon-search {
+  margin-right: 4px;
+  font-size: inherit;
+}
+.weui-icon-search_in-box {
+  position: absolute;
+  left: 10px;
+  top: 7px;
+}
+.weui-search-bar__text {
+  display: inline-block;
+  font-size: 16px;
+}
+.weui-search-bar__form {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+          flex: auto;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 3rpx solid #FDD9CD;
+}
+.weui-search-bar__box {
+  position: relative;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.weui-search-bar__input {
+
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.weui-search-bar__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 3px;
+  text-align: center;
+  color: #9B9B9B;
+  background: #FFFFFF;
+  line-height: 28px;
+}
+.weui-search-bar__cancel-btn {
+  margin-left: 10px;
+  line-height: 28px;
+  color: #FBAEC1;
+  white-space: nowrap;
+}
+

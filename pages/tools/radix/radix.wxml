@@ -1,0 +1,28 @@
+<!--pages/tools/radix/radix.wxml-->
+<view class="container">
+
+  <view class="item">
+    <label class="item-label">十进制:</label>
+    <input class="item-input" type="number" placeholder="这里输入十进制数字" value="{{radixValue10}}" bindinput="getContent" />
+  </view>
+
+  <view class="item">
+    <label class="item-label">二进制:</label>
+    <input class="item-input" type="number" value="{{radixValue2}}" maxlength="140000" />
+  </view>
+
+  <view class="item">
+    <label class="item-label">八进制:</label>
+    <input class="item-input" type="number" value="{{radixValue8}}" />
+  </view>
+
+  <view class="item">
+    <label class="item-label">十六进制:</label>
+    <input class="item-input" type="number" value="{{radixValue16}}" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="clear">清除</button>
+  </view>
+
+</view>

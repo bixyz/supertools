@@ -1,0 +1,35 @@
+<view class="container">
+
+  <view class="item">
+    <label class="item-label">开始时间:</label>
+
+    <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+      <view class="item-input">
+        {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}} {{dateTimeArray[3][dateTime[3]]}}:{{dateTimeArray[4][dateTime[4]]}}:{{dateTimeArray[5][dateTime[5]]}}
+      </view>
+    </picker>
+
+  </view>
+
+  <view class="item">
+    <label class="item-label">结束时间:</label>
+
+
+    <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+      <view class="item-input">
+        {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}:{{dateTimeArray1[5][dateTime1[5]]}}
+      </view>
+    </picker>
+
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="calcDate">计算</button>
+  </view>
+
+  <view class="result-container">
+    <textarea class="result-input" maxlength="140000" placeholder="这里展示结果" value="{{showCalcResult}}" />
+  </view>
+
+
+</view>

@@ -1,0 +1,23 @@
+<!--pages/tools/led/led.wxml-->
+<view class="container">
+
+  <view class="item">
+    <label class="item-label">文字内容:</label>
+    <input class="item-input" value="这是展示内容" bindinput="getContent" />
+  </view>
+
+  <!-- <view class="item">
+    <label class="item-label">文字大小:</label>
+    <input class="item-input" type="number" value="140" maxlength="4" bindinput="getSize" />
+  </view> -->
+
+  <view class="item">
+    <label class="item-label">滚动速度:</label>
+    <input class="item-input" type="number" value="1" placeholder="越大滚动越快(1~10)" maxlength="2" bindinput="getSpeed" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="showLed">显示</button>
+  </view>
+
+</view>

@@ -1,0 +1,21 @@
+<!--pages/tools/express/express.wxml-->
+<view class="container">
+
+  <!-- <scroll-view class="result-container" scroll-y="true">
+    <rich-text class="result-input" bindlongpress="copy" data-text="{{resultNodes}}" selectable='true' nodes="{{resultNodes}}" />
+  </scroll-view> -->
+
+<view class="container">
+
+  <scroll-view class="result-container" scroll-y="true" scroll-top="{{scrollIndex}}">
+    <text class="result-input" selectable='true'>{{resultContent}}</text>
+  </scroll-view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="query" data-page="pre">上一页</button>
+    <button class="button next" type="primary" bindtap="query" data-page="next">下一页</button>
+  </view>
+
+    </view>
+
+</view>

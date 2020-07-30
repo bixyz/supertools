@@ -1,0 +1,32 @@
+/* pages/tools/express/express.wxss */
+
+page{
+  height: 100%;
+}
+
+.container{
+  padding: 0 0;
+}
+
+.item {
+  width: 96%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.button {
+  margin-bottom: 40rpx;
+  margin-top: 40rpx;
+}
+
+.button.next {
+  margin-left: 50rpx;
+}
+
+.result-container {
+  width: 96%;
+  height: auto;
+}
+

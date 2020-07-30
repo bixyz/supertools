@@ -1,0 +1,44 @@
+<view class="home-container">
+
+  <!--搜索框-->
+  <view class="segments-container ">
+    <view>
+      <view class="weui-search-bar">
+        <view class="weui-search-bar__form">
+          <!-- 最初始时的搜索框 -->
+          <view class="weui-search-bar__box">
+            <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+            <input type="text" class="weui-search-bar__input" placeholder="搜索"  value="{{searchContent}}" bindinput="search" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <!--九宫格-->
+  <view class="grid-container">
+
+    <scroll-view class="grid-scroll-container" scroll-y="true" style="height:{{scrollHeight}}px">
+      <view class="grid">
+        <view class="tui-table-view">
+
+          <view hover-class="click-effect" wx:for="{{tools}}" class='tui-col-3' hidden="{{item.hidden}}" data-aid="{{item.id}}" data-name="{{item.name}}" data-url="{{item.url}}" bindtap="onToolClicked">
+            <!-- <icon class="iconfont icon-shouye"></icon> -->
+            <view>{{item.name}}</view>
+          </view>
+
+          <!--没有搜到，反馈给作者-->
+          <view hover-class="click-effect" class='tui-col-3' bindtap="feedbackClicked">
+            <view >没有找到?</view>
+          </view>
+
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+  <modal hidden="{{hiddenmodalput}}" title="反馈" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" style="align-items: center;text-align: center;align-self:center ;">
+    <input type='text' placeholder="请输入所需功能描述" value='{{feedbackContent}}' bindinput="feedbackInput" maxLength="1400" auto-focus="true"/>
+  </modal>

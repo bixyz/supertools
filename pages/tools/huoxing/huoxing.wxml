@@ -1,0 +1,16 @@
+<!--pages/tools/huoxing/huoxing.wxml-->
+<view class="container">
+
+  <view class="sub-container">
+      <textarea class="result-input" maxlength="14000" placeholder="输入需要转换的内容" bindinput="inputTap" value="{{inputContent}}" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="convertQqlized">转火星文</button>
+    <button class="button nonfirst" type="primary" bindtap="convertSimplized">转简体字</button>
+  </view>
+
+  <view class="sub-container">
+      <textarea class="result-input" maxlength="14000" placeholder="这里展示结果" value="{{resultContent}}" />
+  </view>
+</view>

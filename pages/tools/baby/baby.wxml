@@ -1,0 +1,21 @@
+<!--pages/tools/express/express.wxml-->
+
+<view class="container">
+
+  <view class="item">
+    <input class="item-input" placeholder="输入孕妇年纪，例如 28" bindinput="getAge" />
+  </view>
+
+  <view class="item">
+    <input class="item-input" placeholder="输入预产期月份，例如 11" bindinput="getMonth" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="query">查询</button>
+  </view>
+
+
+  <view class="result-container">
+    <text class="result-input" value="{{resultContent}}" />
+  </view>
+</view>

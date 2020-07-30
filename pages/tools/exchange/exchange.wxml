@@ -1,0 +1,26 @@
+<view class="container">
+  <!--输入-->
+  <view class="item">
+    <picker bindchange="bindPickerChange" value="{{currencyIndex}}" range="{{currencyArray}}" range-key="name">
+      <view class="picker-view">{{currencyArray[currencyIndex].name}}</view>
+    </picker>
+  </view>
+  <input class="item-input" placeholder="请输入数值" bindinput="input" />
+
+<image style="width: 64rpx; height: 64rpx;  margin-top: 50rpx;" src="images/arrow.png"></image>
+      
+
+  <!--转换结果-->
+  <view class="item2">
+    <picker bindchange="bindPickerChange2" value="{{currencyIndex2}}" range="{{currencyArray}}" range-key="name">
+      <view class="picker-view">{{currencyArray[currencyIndex2].name}}</view>
+    </picker>
+  </view>
+  <input class="item-input" placeholder="结果" value="{{resultContent}}" />
+
+  <!--计算-->
+    <view class="item">
+  <button class="button" type="primary" bindtap="convert">计算</button>
+    </view>
+
+</view>

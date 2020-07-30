@@ -1,0 +1,34 @@
+<view class="container">
+
+  <!--选择单位类型-->
+  <view class="item">
+    <picker bindchange="bindKindPickerChange" value="{{kindsIndex}}" range="{{kinds}}" range-key="name">
+      <view class="picker-view">{{kinds[kindsIndex].name}}</view>
+    </picker>
+  </view>
+
+  <!--src输入-->
+  <view class="item">
+    <picker bindchange="bindSrcPickerChange" value="{{srcIndex}}" range="{{unitCodes}}">
+      <view class="picker-view">{{unitCodes[srcIndex]}}</view>
+    </picker>
+  </view>
+  <input class="item-input" placeholder="请输入数值" bindinput="input" />
+
+  <image style="width: 64rpx; height: 64rpx;  margin-top: 50rpx;" src="images/arrow.png"></image>
+
+
+  <!--target转换结果-->
+  <view class="item2">
+    <picker bindchange="bindTargetPickerChange" value="{{targetIndex}}" range="{{unitCodes}}">
+      <view class="picker-view">{{unitCodes[targetIndex]}}</view>
+    </picker>
+  </view>
+  <input class="item-input" placeholder="结果" value="{{resultContent}}" />
+
+  <!--计算-->
+  <view class="item">
+    <button class="button" type="primary" bindtap="convert">计算</button>
+  </view>
+
+</view>

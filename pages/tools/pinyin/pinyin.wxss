@@ -1,0 +1,45 @@
+/* pages/tools/express/express.wxss */
+
+page{
+  height: 100%;
+}
+
+.item {
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+
+.item-input {
+  width: 100%;
+  height: 70rpx;
+  border: 1rpx solid #C0E6B8;
+  border-radius: 3rpx;
+  font-size: 50rpx;
+  font-family: "微软雅黑";
+}
+
+.button {
+  width: 90%;
+  height: 120rpx;
+  margin-top: 50rpx;
+}
+
+.result-container {
+  width: 90%;
+  height: 100%;
+  border: 1px #C0E6B8 solid;
+  border-radius: 3px;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+.result-input {
+  width: 100%;
+  height: 100%;
+  font-size: 50rpx;
+  font-family: "微软雅黑";
+}

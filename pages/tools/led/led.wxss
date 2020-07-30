@@ -1,0 +1,28 @@
+/* pages/tools/led/led.wxss */
+
+.item {
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.item-label {
+  width: 30%;
+  font-size: 40rpx;
+  font-family: "微软雅黑";
+}
+
+.item-input {
+  width: 70%;
+  height: auto;
+  border: 1rpx solid #C0E6B8;
+  border-radius: 3rpx;
+  font-size: 40rpx;
+  font-family: "微软雅黑";
+}
+
+.button {
+  margin-top: 50rpx;
+}

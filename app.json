@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/tools/led/led",
+    "pages/tools/rule/rule",
+    "pages/tools/compass/compass",
+    "pages/tools/rmb/rmb",
+    "pages/tools/random/random",
+    "pages/tools/draw/draw",
+    "pages/tools/huoxing/huoxing",
+    "pages/tools/morse/morse",
+    "pages/tools/datecalc/datecalc",
+    "pages/tools/stringturn/stringturn",
+    "pages/tools/radix/radix",
+    "pages/tools/express/express",
+    "pages/tools/led/canvas/canvas"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "超强工具箱",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

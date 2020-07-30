@@ -1,0 +1,15 @@
+<!--pages/tools/express/express.wxml-->
+<view class="container">
+
+  <view class="item">
+    <input class="item-input" placeholder="输入身份证号" bindinput="getContent" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="query">查询</button>
+  </view>
+
+  <view class="result-container">
+    <textarea class="result-input" maxlength="140000" placeholder="这里展示结果" value="{{resultContent}}" />
+  </view>
+</view>

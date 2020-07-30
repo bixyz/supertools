@@ -1,0 +1,23 @@
+<view class="container">
+
+  <view class="item">
+    <label class="item-label">时间:</label>
+
+    <picker mode="multiSelector" value="{{dateTime}}" bindchange="changeDateTime" bindcolumnchange="changeDateTimeColumn" range="{{dateTimeArray}}">
+      <view class="item-input">
+        {{dateTimeArray[0][dateTime[0]]}}-{{dateTimeArray[1][dateTime[1]]}}-{{dateTimeArray[2][dateTime[2]]}}
+      </view>
+    </picker>
+
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="query">查询</button>
+  </view>
+
+  <scroll-view class="result-container" scroll-y="true">
+    <text class="result-input" selectable='true'>{{resultContent}}</text>
+  </scroll-view>
+
+
+</view>

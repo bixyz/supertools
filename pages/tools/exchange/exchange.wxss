@@ -1,0 +1,49 @@
+
+page{
+  height: 100%;
+}
+
+.item {
+  width: 90%;
+  height: auto;
+  margin-top: 100rpx;
+  border: 4rpx solid #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.item2 {
+  width: 90%;
+  height: auto;
+  margin-top: 50rpx;
+  border: 4rpx solid #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.picker-view {
+  width: 100%;
+  text-align: center;
+  font-size: 50rpx;
+  color: #1EA802;
+}
+
+
+.item-input {
+  width: 90%;
+  height: auto;
+  border: 2rpx solid #1EA802;
+  border-radius: 3rpx;
+  font-size: 50rpx;
+  font-family: "微软雅黑";
+}
+
+/* 选择器 */
+.section{
+  margin: 50rpx 0;
+  font-size: 30rpx;
+}
+
+

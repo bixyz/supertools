@@ -1,0 +1,39 @@
+/* pages/tools/morse/morse.wxss */
+
+page {
+  height: 100%;
+}
+
+.sub-container {
+  width: 90%;
+  height: 600rpx;
+  border-radius: 5px;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  width: 90%;
+  border-radius: 5px;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  margin-bottom: 0rpx
+}
+
+.nonfirst {
+  margin-left: 10rpx;
+}
+
+.result-input {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 50rpx;
+  border: 1px #C0E6B8 solid;
+  font-family: "微软雅黑";
+}

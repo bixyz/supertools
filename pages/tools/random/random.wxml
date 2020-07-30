@@ -1,0 +1,21 @@
+<!--pages/tools/random/random.wxml-->
+<view class="container">
+
+  <view class="item">
+    <label class="item-label">最大值:</label>
+    <input class="item-input" type="number" value="10" maxlength="9" bindinput="getMax" />
+  </view>
+
+  <view class="item">
+    <label class="item-label">个数:</label>
+    <input class="item-input" type="number" value="1" maxlength="4" bindinput="getCount" />
+  </view>
+
+  <view class="item">
+    <button class="button" type="primary" bindtap="calcRandom">生成</button>
+  </view>
+
+  <view class="result-container">
+    <textarea class="result-input" maxlength="140000" placeholder="这里展示结果" value="{{randomResult}}" />
+  </view>
+</view>
